@@ -1,7 +1,7 @@
 package com.librarymanagement.libraryManagement.Repository;
 
-import org.springframework.stereotype.Repository;
+import com.librarymanagement.libraryManagement.Models.Student;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-@Repository
-public class StudentRepository {
+public interface StudentRepository extends JpaRepository<Student, Integer> {
 }

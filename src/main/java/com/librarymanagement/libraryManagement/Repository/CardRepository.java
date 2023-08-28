@@ -1,7 +1,10 @@
 package com.librarymanagement.libraryManagement.Repository;
 
-import org.springframework.stereotype.Repository;
+import com.librarymanagement.libraryManagement.Models.LibraryCard;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.CrudRepository;
 
-@Repository
-public class CardRepository {
+import java.util.List;
+
+public interface CardRepository extends JpaRepository<LibraryCard, Integer> {
 }

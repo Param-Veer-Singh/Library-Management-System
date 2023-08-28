@@ -3,14 +3,20 @@ package com.librarymanagement.libraryManagement.Models;
 import com.librarymanagement.libraryManagement.Enums.Department;
 import com.librarymanagement.libraryManagement.Enums.Gender;
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Entity
 @Table
+@Getter
+@Setter
+@NoArgsConstructor
 public class Student {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id; // primary key & auto
+    private Integer rollNo; // primary key & auto
 
     private String name;
 
